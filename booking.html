@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/Users/thesandiekarunathilaka/Desktop/WDOS ASSIGNMENT /images/mainlogo.png">
+        <title>Welcome to Velvet Sands Mansion</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header id="booking">
+            <!-- NAVIGATION PANEL -->
+            <div class="navigation">
+                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+                
+                <input type="checkbox" id="menu-bar"> <!-- RESPONSIVE NAVIGATION BAR -->
+                <label for="menu-bar">Menu</label>
+    
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="adventures.html">Adventures</a></li>
+                        <li><a href="restaurants.html">Restaurants</a>
+                            <ul><!-- DROPDOWN MENU -->
+                                <li><a href="weddings.html">Weddings</a></li>
+                                <li><a href="functions.html">Meetings and Events</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- ELEMENTS ON HERO-IMAGE -->
+            <div class="heading">
+                <h1>Book Your Stay</h1>
+                <p>| At Ocean Elegance |</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a class="button" href="#booknow">Book Now</a>
+            </div>
+        </header>
+
+        <!-- MAIN - SECTION 1 -->
+    <section class="booking-first-section" id="firstSection">
+        <div class="booking-one-section">
+            <div class="booking-inner-container">
+                <h1>Standard Room</h1>
+                <p class="text">
+                    The Standard Room at Ocean Elegance Beach Hotel offers comfortable and affordable accommodation for travelers. These rooms are well-appointed with essential amenities, such as a cozy bed, a private bathroom, a flat-screen TV, and a small sitting area. Standard rooms provide a convenient and budget-friendly option for guests looking for a pleasant stay by the beach.
+                </p>
+            </div>
+        </div>
+    </section>
+
+         <!-- MAIN - SECTION 2 -->
+    <section class="booking-second-section">
+        <div class="booking-two-section">
+            <div class="booking-inner-container">
+                <h1>Deluxe Room</h1>
+                <p class="text">
+                    The Deluxe Room at Ocean Elegance Beach Hotel takes your experience up a notch. These spacious and elegantly designed rooms feature modern furnishings and offer stunning views of the ocean. Guests staying in the Deluxe Room can enjoy additional amenities like a mini-bar, a private balcony or terrace, and upgraded toiletries, making their stay even more enjoyable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        <!-- MAIN - SECTION 3 -->
+    <section class="booking-third-section">
+        <div class="booking-three-section">
+            <div class="booking-inner-container">
+                <h1>Elegance Suite</h1>
+                <p class="text">
+                    For those seeking the ultimate in comfort and luxury, the Elegance Suite at Ocean Elegance Beach Hotel is a perfect choice. These expansive suites are lavishly decorated and include a separate living area, a fully equipped kitchenette, and a luxurious bathroom with a spa tub. Guests in the Elegance Suite also benefit from personalized concierge services and exclusive access to private lounges or facilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        <section id="booknow">
+            <form>
+                <fieldset class="form-box">
+                    <legend><h2>Make a Reservation</h2></legend>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." size="50" maxlength="50" required>
+          
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." size="50" maxlength="50" required>
+
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="mnumber" name="mobilenumber" max="15" placeholder="Mobile Number..">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail.." required><br>
+            
+                    <label for="check-in">Check-in Date</label>
+                    <input type="date" id="check-in" name="check-in" required>
+           
+                    <label for="check-out">Check-out Date</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                            
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type">
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Suite</option>
+                    </select>
+
+                    <label for="adventure">Adventure</label><br><br>
+                    <input type="checkbox" checked id="adventure1" name="adventure1" value="WaterSports">
+                    <label for="adventure1"> Water Sports</label><br>
+                    <input type="checkbox" id="adventure2" name="adventure2" value="BeachSports">
+                    <label for="adventure2"> BeachSports</label><br>
+                    <input type="checkbox" id="adventure3" name="adventure3" value="SightSee">
+                    <label for="adeventure3"> Sight Seeing</label><br><br>
+                    
+                            
+                    <label for="specialnotes">Special Notes</label>
+                    <textarea id="specialnotes" name="specialnotes" placeholder="Write something.." cols="6" rows="6"></textarea>
+          
+                     <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h4>Contact Us</h4>
+                        <p>Ocean Elegance Hotel<br>Trincomalee, 31000 Nilaveli,<br>Sri Lanka</p>
+                        <p>Telephone:<br>+94 26 222 3355</p>
+                        <p>Email:<br>info@oceanelegance.com</p>
+                    </div>
+    
+                    <div class="column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="branches.html">Branches</a></li>
+                            <li><a href="adventures.html">Adventures</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="booking.html">Booking</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="column">
+                        <h4>Newsletter</h4>
+                        <form action="">
+                            <input type="text" placeholder="Email Address" class="inputEmail">
+                            <input type="submit" value="Submit" class="inputSubmit">
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <p>&copy; 2023 Ocean Elegance. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!--References
+            Nast, C. (no date) Fontainebleau – Hotel review | Condé Nast Traveler. Available at: https://www.cntraveler.com/hotels/united-states/miami-beach/fontainebleau.
+            Rahubovskiy, M. (2021) Contemporary bedroom Interior Design · Free Stock photo, Pexels. Available at: https://www.pexels.com/photo/contemporary-bedroom-interior-design-7598115/.
+            Rahubovskiy, M. (2021a) Brown Bed Linen on Bed · Free Stock photo, Pexels. Available at: https://www.pexels.com/photo/brown-bed-linen-on-bed-8134771/.
+            Modern luxury bedroom suite and bathroom Free Photo (2020) Freepik. Available at: https://www.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_10332634.htm#query=luxury%20hotel%20suite%20rooms&position=17&from_view=search&track=ais.
+        -->    
+        </footer>
+    </body> 
+</html>
