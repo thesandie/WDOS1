@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="/Users/thesandiekarunathilaka/Desktop/WDOS ASSIGNMENT /images/mainlogo.png">
-        <title>Welcome to Velvet Sands Mansion</title>
-        <link rel="icon" href="/Users/thesandiekarunathilaka/Desktop/WDOS ASSIGNMENT /images/Favicon.png" type="image/x-icon">
+        <title>Booking Your Stay with Ocean Elegance</title>
+        <link rel="icon" href="images/Favicon.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js" defer></script>
     </head>
 
     <body>
         <header id="booking">
             <!-- NAVIGATION PANEL -->
             <div class="navigation">
-                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="hotelLogo"></a>
                 
                 <input type="checkbox" id="menu-bar"> <!-- RESPONSIVE NAVIGATION BAR -->
                 <label for="menu-bar">Menu</label>
@@ -47,88 +47,243 @@
         </header>
 
         <!-- MAIN - SECTION 1 -->
-    <section class="booking-first-section" id="firstSection">
-        <div class="booking-one-section">
-            <div class="booking-inner-container">
-                <h1>Standard Room</h1>
-                <p class="text">
-                    The Standard Room at Ocean Elegance Beach Hotel offers comfortable and affordable accommodation for travelers. These rooms are well-appointed with essential amenities, such as a cozy bed, a private bathroom, a flat-screen TV, and a small sitting area. Standard rooms provide a convenient and budget-friendly option for guests looking for a pleasant stay by the beach.
-                </p>
-            </div>
-        </div>
-    </section>
+        <section class="booking-class">
+            <div class="form-container">
+                <h1>Hotel Reservation</h1>
+                
+                <!--Personal Information Form-->
+                <form id="book-form" action="#" class="form">
+                    <fieldset>
+                        <legend>PERSONAL INFORMATION</legend>
 
-         <!-- MAIN - SECTION 2 -->
-    <section class="booking-second-section">
-        <div class="booking-two-section">
-            <div class="booking-inner-container">
-                <h1>Deluxe Room</h1>
-                <p class="text">
-                    The Deluxe Room at Ocean Elegance Beach Hotel takes your experience up a notch. These spacious and elegantly designed rooms feature modern furnishings and offer stunning views of the ocean. Guests staying in the Deluxe Room can enjoy additional amenities like a mini-bar, a private balcony or terrace, and upgraded toiletries, making their stay even more enjoyable.
-                </p>
-            </div>
-        </div>
-    </section>
-
-        <!-- MAIN - SECTION 3 -->
-    <section class="booking-third-section">
-        <div class="booking-three-section">
-            <div class="booking-inner-container">
-                <h1>Elegance Suite</h1>
-                <p class="text">
-                    For those seeking the ultimate in comfort and luxury, the Elegance Suite at Ocean Elegance Beach Hotel is a perfect choice. These expansive suites are lavishly decorated and include a separate living area, a fully equipped kitchenette, and a luxurious bathroom with a spa tub. Guests in the Elegance Suite also benefit from personalized concierge services and exclusive access to private lounges or facilities.
-                </p>
-            </div>
-        </div>
-    </section>
-
-        <section id="booknow">
-            <form>
-                <fieldset class="form-box">
-                    <legend><h2>Make a Reservation</h2></legend>
-
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." size="50" maxlength="50" required>
-          
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." size="50" maxlength="50" required>
-
-                    <label for="phone">Mobile Number</label>
-                    <input type="tel" id="mnumber" name="mobilenumber" max="15" placeholder="Mobile Number..">
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="E-mail.." required><br>
-            
-                    <label for="check-in">Check-in Date</label>
-                    <input type="date" id="check-in" name="check-in" required>
-           
-                    <label for="check-out">Check-out Date</label>
-                    <input type="date" id="check-out" name="check-out" required>
-                            
-                    <label for="room-type">Room Type</label>
-                    <select id="room-type" name="room-type">
-                        <option value="standard">Standard</option>
-                        <option value="deluxe">Deluxe</option>
-                        <option value="suite">Suite</option>
-                    </select>
-
-                    <label for="adventure">Adventure</label><br><br>
-                    <input type="checkbox" checked id="adventure1" name="adventure1" value="WaterSports">
-                    <label for="adventure1"> Water Sports</label><br>
-                    <input type="checkbox" id="adventure2" name="adventure2" value="BeachSports">
-                    <label for="adventure2"> BeachSports</label><br>
-                    <input type="checkbox" id="adventure3" name="adventure3" value="SightSee">
-                    <label for="adeventure3"> Sight Seeing</label><br><br>
-                    
-                            
-                    <label for="specialnotes">Special Notes</label>
-                    <textarea id="specialnotes" name="specialnotes" placeholder="Write something.." cols="6" rows="6"></textarea>
-          
-                     <input type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </section>
+                        <div class="input-box">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="" id="fullName" required>
+                        </div>
         
+                        <div class="input-box">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="" id="phoneNumber" required>
+                        </div>
+        
+                        <div class="input-box">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="" id="email" required>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <!--Room Booking Form-->
+                <form id="book-form2" action="#" class="form">
+                    <fieldset>
+                        <legend>ROOM BOOKING</legend>
+    
+                        <div class="column">
+                            <div class="input-box">
+                                <label><u>Check-in Date</u></label>
+                                <input type="date" id="checkin" name="date">
+                            </div>
+        
+                            <div class="input-box">
+                                <label><u>Check-out Date</u></label>
+                                <input type="date" id="checkout" name="date">
+                            </div>
+                        </div>
+    
+                        <div class="column">
+                            <div class="input-box">
+                                <label><u>Number of Adults</u></label>
+                                <input type="number" placeholder="0" min="0" max="20" id="adults">
+                            </div>
+        
+                            <div class="input-box">
+                                <label><u>Number of Children</u></label>
+                                <input type="number" placeholder="0" min="0" max="20" id="noChildren">
+                            </div>
+
+                            <div class="input-box">
+                                <label><u>Meal - For Kids Above 5</u></label>
+                                <input type="number" placeholder="0" min="0" max="20" id="mealsKids">
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <label><u>Room Types</u></label>
+                        </div>
+
+                        <div class="room-types">
+                            <label>Single Rooms :</label>
+                            <input placeholder="0" type="number" min="0" max="10" id="singleRooms">
+
+                            <label>Double Rooms :</label>
+                            <input placeholder="0" type="number" min="0" max="10" id="doubleRooms">
+
+                            <label>Triple Rooms :</label>
+                            <input placeholder="0" type="number" min="0" max="10" id="tripleRooms">
+                        </div>
+
+                        <div class="extra-requirements">
+                            <label><u>Extra Requirements</u></label><br>
+
+                            <div class="amenities">
+                                <label>
+                                    Extra Bed : <input type="checkbox" name="wifi" id="extraBed"> 
+                                </label>
+                                <label>
+                                    WiFi : <input type="checkbox" name="wifi" id="wifi"> 
+                                </label>
+                                <label>
+                                    Beach View : <input type="checkbox" name="beach-view" id="beachView"> 
+                                </label>
+                                <label>
+                                    Pool View : <input type="checkbox" name="pool-view" id="poolView"> 
+                                </label>
+                            </div>
+                        </div>
+    
+
+                        <div class="promo-and-loyalty">
+                            <div class="promo">
+                                <label><u>Promo Code :</u></label>
+                                <input type="text" id="promocode">
+                            </div>
+                            
+                            <div class="loyalty">
+                                <button id="checkBtn">Check Loyalty Points</button>:
+                                <span class="loyaltyBox" id="loyaltyBox"></span>
+                            </div>
+                        </div>
+
+                        <div class="currentCosts">
+                            <label class="currentBookLbl"><u>Current Booking Cost :</u></label>
+                            <span class="currentBookOutput" id="currentBookOutput"></span>
+
+                            <span class="overallBookOutput" id="overallBookOutput"></span>
+                        </div>
+
+                        <div class="bookNowBtns">
+                            <button type="button" id="bookNow">BOOK NOW</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <!--Adventure Booking Form-->
+                <form id="book-form3" action="#" class="form">
+                    <fieldset>
+                        <legend>Adventure Booking</legend>
+
+                        <div class="input-box">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter full name" id="advName" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label>Adventure Type:</label>
+                            <select id="adventureType" required>
+                                <option label="none" value="" disabled selected hidden></option>
+                                <option value="Water Sports" id="advWater">Water Sports (Diving, Jet Skiing, Parasailing)</option>
+                                <option value="Beach Sports" id="advBeach">Beach Sports (Volleyball, Soccer, Frisbee Tournaments)</option>
+                                <option value="Sight-Seeing" id="advSightSee">Sight-Seeing (Island travelling, Wildlife travelling, Sunset Cruises)</option>
+                            </select>
+                        </div>
+
+                        <div class="column">
+                            <div class="input-box">
+                                <label>Number of Local Adults</label>
+                                <input type="number" placeholder="0" id="localAdults" required>
+                            </div>
+        
+                            <div class="input-box">
+                                <label>Number of Local Children</label>
+                                <input type="number" placeholder="0" id="localKids" required>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="input-box">
+                                <label>Number of Foreign Adults</label>
+                                <input type="number" placeholder="0" id="foreignAdults" required>
+                            </div>
+        
+                            <div class="input-box">
+                                <label>Number of Foreign Children</label>
+                                <input type="number" placeholder="0" id="foreignKids" required>
+                            </div>
+                        </div>
+
+                        <div class="guide-select">
+                            <label>Need for a Guide?</label>
+                            <div class="guide-select-container">
+                                Adults : <input type="checkbox" name="guide-adults" id="guideAdults">
+                                Kids : <input type="checkbox" name="guide-kids" id="guideKids">
+                            </div>
+                        </div>
+
+                        <div class="currentAdvCosts">
+                            <label class="currentAdvLbl">Current Adventure Booking Cost :</label>
+                            <span class="currentAdvOutput" id="currentAdvOutput"></span>
+
+                            <span class="overallAdvOutput" id="overallAdvOutput"></span>
+                        </div>
+
+                        <div class="AdvBtns">
+                            <button type="button" id="bookAdv">BOOK ADVENTURE</button>
+                        </div>
+                    </fieldset>
+
+                    <div class="bookNowBtns">
+                        <button id="favourites">ADD TO FAVOURITES</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--Display Tables of Room Booking Information-->
+        <section class="detailsTable">
+            <table class="bookTable">
+                <thead>
+                    <tr>
+                        <td>NAME</td>
+                        <td>CHECK-IN</td>
+                        <td>CHECK-OUT</td>
+                        <td>ADULTS</td>
+                        <td>CHILDREN</td>
+                        <td>ABOVE 5 YEARS</td>
+                        <td>SINGLE ROOM</td>
+                        <td>DOUBLE ROOM</td>
+                        <td>TRIPLE ROOM</td>
+                        <td>EXTRA BED</td>
+                        <td>WI-FI</td>
+                        <td>BEACH</td>
+                        <td>POOL</td>
+                        <td>PROMOCODE</td>
+                        <td>TOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="bookTableBody"></tbody>
+            </table>     
+        </section>
+
+        <!--Display Table of Adventure Booking Information-->
+        <section class="detailsTable">
+            <table class="advTable">
+                <thead>
+                    <tr>
+                        <td>NAME</td>
+                        <td>ADVENTURE</td>
+                        <td>LOCAL ADULTS</td>
+                        <td>LOCAL KIDS</td>
+                        <td>FOREIGN ADULTS</td>
+                        <td>FOREIGN KIDS</td>
+                        <td>GUIDE FOR ADULTS</td>
+                        <td>GUIDE FOR KIDS</td>
+                        <td>TOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="advTableBody"></tbody>
+            </table>     
+        </section>
+    
         <footer>
             <div class="container">
                 <div class="row">
@@ -152,7 +307,7 @@
     
                     <div class="column">
                         <h4>Newsletter</h4>
-                        <form action="">
+                        <form action="#">
                             <input type="text" placeholder="Email Address" class="inputEmail">
                             <input type="submit" value="Submit" class="inputSubmit">
                         </form>
