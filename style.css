@@ -59,6 +59,7 @@
 #booking {
     background-image: url(images/header5.png);
     height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
@@ -335,43 +336,269 @@ header .button:hover {
     font-size: 16px;
 }
 
-/* ===== BOOKING PAGE ===== */
-.booking-first-section {
-    min-height: 60vh;
+/* ===== BOOKINGS PAGE ===== */
+.booking-class {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f1f1;
+    background-color: rgba(115, 147, 179, 0.8);
+    padding: 50px;
 }
 
-.booking-one-section {
-    background: url(images/image42.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 50px 0;
+.form-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    margin-left: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.booking-inner-container {
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 80px;
+.form-container h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
 }
 
-.booking-inner-container h1 {
-    margin-bottom: 30px;
-    font-size: 35px;
-    font-weight: 900;
+.form-container .form {
+    margin-top: 30px;
 }
 
-.booking-inner-container .text {
-    font-size: 14px;
+.form fieldset {
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+.form .input-box, .room-types {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: #476e89;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 80px;
+}
+
+.room-types label {
+    color: #575656;
+}
+
+.room-types input {
+    margin-right: 30px;
+    height: 50px;
+    width: 80px;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: #476e89;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.extra-requirements {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.amenities {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #575656;
+}
+
+.amenities label {
+    margin-right: 40px;
+    color: #575656;
+}
+
+.amenities select {
+    width: 60px;
+    height: 30px;
+    background-color: #476e89;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.promo-and-loyalty, .currentCosts {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.promo label, .currentCosts label {
+    color: #333;
+}
+
+.promo input {
+    height: 50px;
+    width: 200px;
+    outline: none;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: #476e89;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.loyalty{
+    display: flex;
+    align-items: center;
+}
+
+.loyaltyBox {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    background-color: #476e89;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.loyalty button {
+    margin-left: 80px;
+    font-size: 1rem;
+    height: 20px;
+}
+
+.currentCosts, .currentAdvCosts {
+    margin-top: 30px;
+}
+
+.currentBookOutput, .currentAdvOutput {
+    margin-left: 10px;
+    margin-right: 100px;
+    font-size: 1rem;
     color: #545454;
-    line-height: 30px;
-    text-align: justify;
 }
 
+.bookNowBtns, .AdvBtns {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#bookNow, #favourites, #bookAdv {
+    margin: 20px 70px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bookNow:hover, #favourites:hover, #bookAdv:hover {
+    background-color: #4989b4;
+    color: #fff;
+}
+
+/*Adventure form*/
+
+.input-box select {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    background-color: #476e89;
+    color: #ffffff;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.guide-select {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.guide-select label {
+    color: #333;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.guide-select-container input {
+    margin-right: 50px;
+}
+
+/*Display Table*/
+.detailsTable table, .advTable table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+}
+
+.detailsTable thead {
+    background-color: rgba(55, 120, 150, 0.868);
+    color: #fff;
+    font-size: 14px;
+}
+
+.detailsTable td, .detailsTable th {
+    padding: 10px;
+    text-align: center;
+}
+
+.detailsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2c2;
+}
+
+.detailsTable {
+    display: flex;
+    justify-content: space-around;
+}
+
+.advTable {
+    margin-top: 20px;
+}
 
 /*============================== MAIN SECTION 2 ================================*/
 
@@ -608,43 +835,6 @@ header .button:hover {
     font-weight: 900;
 }
 
-/* ===== BOOKING PAGE ===== */
-.booking-second-section {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
-
-.booking-two-section {
-    background: url(images/image43.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 50px 0;
-}
-
-.booking-inner-container {
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 80px;
-}
-
-.booking-inner-container h1 {
-    margin-bottom: 30px;
-    font-size: 35px;
-    font-weight: 900;
-}
-
-.booking-inner-container .text {
-    font-size: 14px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-}
-
 
 /*============================ MAIN SECTION 3 ===========================*/
 
@@ -857,43 +1047,6 @@ header .button:hover {
     font-weight: 900;
 }
 
-/* ===== BOOKING PAGE ===== */
-.booking-third-section {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
-
-.booking-three-section {
-    background: url(images/image44.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 50px 0;
-}
-
-.booking-inner-container {
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 80px;
-}
-
-.booking-inner-container h1 {
-    margin-bottom: 30px;
-    font-size: 35px;
-    font-weight: 900;
-}
-
-.booking-inner-container .text {
-    font-size: 14px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-}
-
 
 /*========================== MAIN SECTION 4 =============================*/
 
@@ -959,15 +1112,6 @@ header .button:hover {
     font-weight: 900;
     margin-top: 45px;
     margin-bottom: 50px;
-}
-
-table .table-container h1::before {
-    content: "";
-    width: 70px;
-    height: 2px;
-    position: absolute;
-    background-color: rgba(74, 149, 184, 0.868);
-    bottom: -10px;
 }
 
 .table {
@@ -1105,52 +1249,6 @@ table .table-container h1::before {
     margin-bottom: 30px;
     font-size: 35px;
     font-weight: 900;
-}
-
-/* ===== BOOKING PAGE ===== */
-
-/* Style inputs with type="text"*/
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
- select, textarea {
-    width: 100%; 
-    align-content: center;
-    vertical-align: middle;
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical;
-}
-
-  .form-box {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 50%;
-}
-  
-  
-  /* submit button */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  
-  /* When moving the mouse over the submit button, it gets darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
 }
 
 
@@ -1330,24 +1428,25 @@ footer hr {
     .restaurants-more-section {
         background-size: 80%;
     }
-
-    /*===================BOOKING PAGE=====================*/
-    /*==== MAIN SECTION 1 ====*/
-    .booking-one-section {
-        background-size: 80%;
+    
+    /*===================BOOKINGS PAGE=====================*/
+    .form-container {
+        margin-left: 20px;
     }
 
-    /*==== MAIN SECTION 2 ====*/
-    .booking-two-section {
-        background-size: 80%;
+    .form-container .form fieldset {
+        padding: 20px;
     }
 
-    /*==== MAIN SECTION 3 ====*/
-    .booking-three-section {
-        background-size: 80%;
+    .form .column {
+        flex-direction: column;
+        column-gap: 20px;
+    }
+
+    .room-types input {
+        margin-right: 10px;
     }
 }
-
 
 /*============= MOBILE RESPONSIVE AT MAX-WIDTH: 1000PX ================*/
 
@@ -1364,6 +1463,7 @@ footer hr {
         background-size: 100%;
         padding: 100px 40px;
     }
+
     .inner-container{
         width: 100%;
     }
@@ -1456,30 +1556,24 @@ footer hr {
         width: 60%;
         padding: 60px;
     }
-    
+
     /*===================BOOKING PAGE=====================*/
-    /*==== MAIN SECTION 1 ====*/
-
-    .booking-one-section {
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .booking-inner-container {
-        width: 80%;
+    .form-container {
+        margin-left: 10px;
     }
 
-    /*==== MAIN SECTION 2 ====*/
-    .booking-two-section {
-        background-size: 100%;
-        padding: 100px 40px;
+    .form .input-box, .room-types {
+        width: 100%;
     }
 
-    /*==== MAIN SECTION 3 ====*/
-    .booking-three-section {
-        background-size: 100%;
-        padding: 100px 40px;
+    .form .column {
+        flex-direction: column;
+        column-gap: 10px;
     }
 
+    .detailsTable,.advTable {
+        flex-direction: column;
+    }
 }
 
 /*============== MOBILE RESPONSIVE AT MAX-WIDTH: 930PX ================*/
@@ -1573,6 +1667,37 @@ footer hr {
     .image-gallery img {
         max-width: 300px;
         height: 250px;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    .form-container {
+        margin-left: 5px;
+    }
+
+    .form .column {
+        column-gap: 5px;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 730PX ================*/
+
+@media (max-width: 730px) {
+    .form fieldset {
+        max-width: 500px;
+    }
+
+    .form .input-box input {
+        width: 70%;
+    }
+
+    .loyalty {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .loyalty button {
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
 
@@ -1918,31 +2043,46 @@ footer hr {
     }
 
     /*===================BOOKING PAGE=====================*/
-    /*==== MAIN SECTION 1 ====*/
-    .booking-one-section {
-        background-size: 100%;
+    .form-container {
+        margin-left: 0;
     }
 
-    .booking-inner-container {
+    .form .column {
+        flex-direction: column;
+        column-gap: 10px;
+    }
+
+    .form .input-box input,
+    .room-types input {
+        width: 100%;
+    }
+
+    .form .input-box label {
+        margin-bottom: 5px;
+    }
+
+    #book-form2 fieldset {
         padding: 10px;
-        background-color: #f1f1f1;
     }
 
-    .booking-inner-container h1 {
-        font-size: 30px;
+    .form fieldset {
+        max-width: 300px;
     }
 
-    /*==== MAIN SECTION 2 ====*/
-    .booking-two-section {
-        background-size: 100%;
+    .form .input-box input {
+        width: 50%;
     }
 
-    /*==== MAIN SECTION 3 ====*/
-    .booking-three-section {
-        background-size: 100%;
+    .loyalty {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .loyalty button {
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
-
 
 /*============== MOBILE RESPONSIVE AT MAX-WIDTH: 400PX ==================*/
 
@@ -2118,33 +2258,37 @@ footer hr {
         font-size: 13px;
     }
 
-    /*===================BOOKING PAGE=====================*/
-    /*==== MAIN SECTION 1 ====*/
-    .booking-one-section {
-        padding: 0;
+    /*===================BRANCHES PAGE=====================*/
+    /*==== MAIN SECTION 4 ====*/
+    .booking-class {
+        padding: 0px;
     }
 
-    .booking-inner-container {
-        padding: 50px;
-        background-color: #f1f1f1;
+    .form-container {
+        max-width: 500px;
+        padding: 20px;
+        margin-left: 0px;
     }
 
-    .booking-inner-container h1 {
-        font-size: 20px;
+    .form-container h1 {
+        font-size: 1.5rem;
     }
 
-    .booking-inner-container .text {
-        font-size: 12px;
+    .form fieldset {
+        padding: 20px;
+        margin-bottom: 40px;
     }
 
-    /*==== MAIN SECTION 2 ====*/
-    .booking-two-section {
-        padding: 0;
+    legend {
+        font-size: 15px;
     }
 
-    /*==== MAIN SECTION 3 ====*/
-    .booking-three-section {
-        padding: 0;
+    /*===================BOOKINGS PAGE=====================*/
+    .form-container {
+        padding: 20px;
+    }
+
+    .form .column {
+        column-gap: 5px;
     }
 }
-
